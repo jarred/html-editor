@@ -1,0 +1,28 @@
+<!doctype html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Markup</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" type="text/css" href="./css/style.css" >
+  </head>
+  <body>
+    <section id="document" class="extend element" data-view="Document">
+      <div class="contents"></div>
+      <form class="add">
+        <input type="text" placeholder="+"></input>
+      </form>
+    </section>
+    <section id="notes">
+      <p>This is an experimental markup tool.</p>
+      <p>The idea is that you can quickly create elements with a css-ish shorthand. For example:</p>
+      <pre>a#add-to-cart.btn.btn-primary[href=/checkout]</pre>
+      <p>Should result in something like this:</p>
+      <pre>&lt;a id="add-to-cart" class="btn btn-primary" href="/checkout"&gt;&lt;/a&gt;</pre>
+
+    </section>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/require.js/1.0.8/require.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
